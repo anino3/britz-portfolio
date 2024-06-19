@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Britz Kysler Francia</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Britz Kysler Francia</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Britz Kysler Francia profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Britz Kysler Francia</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Britz-Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/britz-kysler-m-francia-938927272/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/anino3?tab=repositories'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about_pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Education</h3>
+              <div class="education-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+              </div>
+              <p>Bachelor of Science in Computer Science<br />University of Mindanao<br />(2020-2024)</p>
+              <div class="deans-lister">
+                <br>
+                <br>
+                <p>Dean's Lister<br />2020-2024</p>
+              </div>
+              <br>
+              
+            </div>
+            
+            <div class="details-container">
+              <h3>Development Stack</h3>
+              <p>Frontend Development</p>
+
+              <div class="stack">
+                <figure>
+                  <img src="./assets/html.png" alt="HTML icon" class="icon" />
+                  <figcaption>HTML</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/css.png" alt="CSS icon" class="icon" />
+                  <figcaption>CSS</figcaption>
+                </figure>
+                
+          
+                <figure>
+                  <img src="./assets/react.png" alt="React icon" class="icon" />
+                  <figcaption>React</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/bootstrap.png" alt="Bootstrap icon" class="icon" />
+                  <figcaption>BootStrap</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/bubble.png" alt="Bubble icon" class="icon" />
+                  <figcaption>Bubble</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/wix.png" alt="Wix icon" class="icon" />
+                  <figcaption>Wix</figcaption>
+                </figure>
+              </div>
+              <p>Mobile Development</p>
+              <div class="stack">
+                <figure>
+                  <img src="./assets/flutter.png" alt="Flutter icon" class="icon" />
+                  <figcaption>Flutter</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/firebase.png" alt="Firebase icon" class="icon" />
+                  <figcaption>Firebase</figcaption>
+                </figure>
+              </div>
+              <p>Backend Development</p>
+              <div class="stack">
+                <figure>
+                  <img src="./assets/java.png" alt="JavaScript icon" class="icon" />
+                  <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/python.png" alt="Python icon" class="icon" />
+                  <figcaption>Python</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/javas.png" alt="Java icon" class="icon" />
+                  <figcaption>Java</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/php.png" alt="PHP icon" class="icon" />
+                  <figcaption>PHP</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/c.png" alt="C# icon" class="icon" />
+                  <figcaption>C#</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/mysql.png" alt="MYSQL icon" class="icon" />
+                  <figcaption>MySQL</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-container">
+            <p>
+              I'm a passionate web developer dedicated to creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I aim to bring innovative solutions to the digital world. My journey into web development began with a fascination for how websites work behind the scenes. Starting with self-taught HTML and CSS, I gradually expanded my skills to include JavaScript, React, Node.js, and various other technologies. This journey has been driven by a deep curiosity and a desire to continuously learn and improve.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Jairosoft, INC. (Bubble Developer Intern)</h2>
+            <div class="article-container">
+              <p>July - August 2023</p>
+              <p>• Learned visual programming capabilities, developed sophisticated and responsive web applications <br> • Led the development of user-interface of an advanced AI-powered resume screening web application <br>• API integration to front-end development  </p>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">AQ Luxe Living (General Virtual Assistant)</h2>
+            <div class="article-container">
+              <p>February - April 2024</p>
+              <p>• Developed a Car Rental System Website in Wix Platform <br> • Maintained and updated client databases and CRM systems.
+                <br>• Handled social media accounts, creating and posting content, and engaging with followers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+              <img
+                src="./assets/project-12.png"
+                alt="Project 1"
+                class="project-img"
+              />
+              <img
+                src="./assets/project-123.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Car Rental System</h2>
+            <div class="btn-container">
+              
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://aqluxedrive.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+              <img
+                src="./assets/project-21.png"
+                alt="Project 2"
+                class="project-img"
+              />
+              <img
+                src="./assets/project-22.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Vet Information System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/anino3/vetims'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+              <img
+                src="./assets/project-31.png"
+                alt="Project 3"
+                class="project-img"
+              />
+              <img
+                src="./assets/project-32.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ResuBot AI Screening</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://resubotfinal.bubbleapps.io/version-test/login?debug_mode=true&display=signup'"
+              >
+                Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">franciabritz17.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/britz-kysler-m-francia-938927272/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
