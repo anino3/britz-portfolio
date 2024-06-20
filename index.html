@@ -10,31 +10,33 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Britz Kysler Francia</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <div class="logo">Britz Kysler Francia</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li> <!-- New Nav Link -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Britz Kysler Francia</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">Britz Kysler Francia</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li> <!-- New Nav Link -->
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
@@ -302,6 +304,7 @@
                 class="project-img"
               />
             </div>
+            <br><br><br>
             <h2 class="experience-sub-title project-title">ResuBot AI Screening</h2>
             <div class="btn-container">
               <button
@@ -318,9 +321,31 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./#certificates'"
       />
     </section>
+    <br><br><br>
+    <section id="certificates">
+      <p class="section__text__p1">My Achievements</p>
+      <h1 class="title">Certificates</h1>
+      <div class="certificates-container">
+          <div class="certificate-item">
+              <img src="./assets/certiport-html-css.jpg" alt="Certificate 1" class="certificate-img" />
+              
+          </div>
+          <div class="certificate-item">
+              <img src="./assets/certiport-java.jpg" alt="Certificate 2" class="certificate-img" />
+              
+          </div>
+          <!-- Add more certificates as needed -->
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+  </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
